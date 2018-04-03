@@ -1,0 +1,372 @@
+city_id,city_name,most_popular_browser,count
+0,unknown,Internet Explorer 8,21340
+1,,Chrome 21,18095
+2,,Mobile Safari,9591
+3,,Internet Explorer 8,1434
+4,shijiazhuang,Internet Explorer 8,5606
+5,tangshan,Chrome 21,2636
+6,qinhuangdao,Chrome 21,1310
+7,handan,Internet Explorer 8,2099
+8,xingtai,Internet Explorer 8,2391
+9,baoding,Internet Explorer 8,3403
+10,zhangjiakou,Internet Explorer 8,899
+11,chengde,Chrome 21,789
+12,cangzhou,Internet Explorer 8,1938
+13,langfang,Chrome 21,2110
+14,hengshui,Internet Explorer 8,1257
+15,,Internet Explorer 8,1246
+16,taiyuan,Chrome 21,3417
+17,datong,Chrome 21,1035
+18,yangquan,Internet Explorer 8,819
+19,changzhi,Internet Explorer 8,759
+20,jincheng,Internet Explorer 8,675
+21,shuozhou,Chrome 21,305
+22,jinzhongshi,Internet Explorer 8,1056
+23,yuncheng,Internet Explorer 8,1494
+24,xinzhou,Internet Explorer 8,660
+25,linfen,Internet Explorer 8,1116
+26,lvliang,Internet Explorer 8,1031
+27,,Internet Explorer 8,703
+28,huhehaote,Chrome 21,1373
+29,baotou,Chrome 21,941
+30,wuhai,Chrome 21,250
+31,chifeng,Internet Explorer 8,999
+32,tongliao,Internet Explorer 8,814
+33,eerduosi,Chrome 21,645
+34,hulunbeier,Internet Explorer 8,800
+35,bayannaoer,Internet Explorer 8,393
+36,wulanchabu,Internet Explorer 8,305
+37,xingan,Internet Explorer 8,379
+38,xilinguole,Chrome 21,283
+39,alashan,Internet Explorer 8,120
+40,,Chrome 21,673
+41,shenyang,Chrome 21,3988
+42,dalian,Chrome 21,3382
+43,anshan,Internet Explorer 8,1521
+44,fushun,Internet Explorer 8,1052
+45,benxi,Internet Explorer 8,868
+46,dandong,Internet Explorer 8,939
+47,jinzhou,Internet Explorer 8,1327
+48,yingkou,Internet Explorer 8,967
+49,fuxin,Internet Explorer 8,864
+50,liaoyang,Internet Explorer 8,711
+51,panjin,Internet Explorer 8,817
+52,tieling,Internet Explorer 8,792
+53,chaoyang,Internet Explorer 8,843
+54,huludao,Internet Explorer 8,864
+56,changchun,Chrome 21,4028
+57,jilin_city,Internet Explorer 8,2631
+58,siping,Internet Explorer 8,1064
+59,liaoyuan,Internet Explorer 8,319
+60,tonghua,Internet Explorer 8,727
+61,baishan,Internet Explorer 8,538
+62,songyuan,Internet Explorer 8,701
+63,baicheng,Internet Explorer 8,677
+64,yanbian,Internet Explorer 8,1198
+65,,Internet Explorer 8,668
+66,haerbin,Internet Explorer 8,4379
+67,qiqihaer,Internet Explorer 8,1427
+68,jixi,Internet Explorer 8,631
+69,hegang,Internet Explorer 8,410
+70,shuangyashan,Internet Explorer 8,650
+71,daqing,Internet Explorer 8,1615
+72,yichun_65,Internet Explorer 8,519
+73,jiamusi,Internet Explorer 8,937
+74,qitaihe,Internet Explorer 8,302
+75,mudanjiang,Internet Explorer 8,1215
+76,heihe,Internet Explorer 8,542
+77,suihua,Internet Explorer 8,1078
+78,daxinganling,Internet Explorer 8,174
+79,,Chrome 21,11296
+80,,Internet Explorer 8,1535
+81,nanjing,Chrome 21,5525
+82,wuxi,Chrome 21,3141
+83,xuzhou,Internet Explorer 8,2966
+84,changzhou,Chrome 21,2059
+85,suzhou_jiangsu,Internet Explorer 8,6703
+86,nantong,Internet Explorer 8,1921
+87,lianyungang,Mobile Safari,2348
+88,huaian,Internet Explorer 8,1068
+89,yancheng,Internet Explorer 8,1661
+90,yangzhou,Internet Explorer 8,1872
+91,zhenjiang,Chrome 21,1253
+92,taizhou_jiangsu,Internet Explorer 8,1397
+93,suqian,Internet Explorer 8,983
+94,,Chrome 21,901
+95,hangzhou,Chrome 21,8978
+96,ningbo,Chrome 21,4026
+97,wenzhou,Mobile Safari,5881
+98,jiaxing,Internet Explorer 8,2399
+99,huzhou,Mobile Safari,1234
+100,shaoxing,Internet Explorer 8,2081
+101,jinhua,Internet Explorer 8,3354
+102,quzhou,Internet Explorer 8,762
+103,zhoushan,Mobile Safari,629
+104,taizhou,Internet Explorer 8,2906
+105,lishui,Mobile Safari,1244
+106,,Chrome 21,4063
+107,hefei,Chrome 21,3532
+108,wuhu,Chrome 21,897
+109,bangbu,Internet Explorer 8,835
+110,huainan,Internet Explorer 8,916
+111,maanshan,Chrome 21,680
+112,huaibei,Internet Explorer 8,504
+113,tongling,Internet Explorer 8,405
+114,anqing,Internet Explorer 8,816
+115,huangshan,Internet Explorer 8,410
+116,chuzhou,Internet Explorer 8,341
+117,fuyang,Internet Explorer 8,445
+118,suzhou,Internet Explorer 8,768
+119,chaohu,Internet Explorer 8,602
+120,liuan,Internet Explorer 8,786
+121,bozhou,Internet Explorer 8,509
+122,chizhou,Internet Explorer 8,324
+123,xuancheng,Internet Explorer 8,662
+124,,Mobile Safari,647
+125,fuzhou_124,Chrome 21,4739
+126,xiamen,Chrome 21,3032
+127,putian,Internet Explorer 8,1610
+128,sanming,Chrome 21,656
+129,quanzhou,Mobile Safari,4633
+130,zhangzhou,Mobile Safari,1080
+131,nanping,Mobile Safari,609
+132,longyan,Mobile Safari,730
+133,ningde,Mobile Safari,868
+134,,Chrome 21,724
+135,nanchang,Chrome 21,3025
+136,jingdezhen,Internet Explorer 8,437
+137,pingxiang,Internet Explorer 8,492
+138,jiujiang,Chrome 21,835
+139,xinyu,Internet Explorer 8,372
+140,yingtan,Chrome 21,216
+140,yingtan,Internet Explorer 8,216
+141,ganzhou,Chrome 21,1464
+142,jian,Internet Explorer 8,736
+143,yichun_134,Internet Explorer 8,922
+144,fuzhou_134,Internet Explorer 8,566
+145,shangrao,Mobile Safari,793
+146,,Internet Explorer 8,2003
+147,jinan,Chrome 21,4259
+148,qingdao,Chrome 21,5052
+149,zibo,Internet Explorer 8,1854
+150,zaozhuang,Internet Explorer 8,1706
+151,dongying,Internet Explorer 8,1133
+152,yantai,Internet Explorer 8,3164
+153,weifang,Internet Explorer 8,2975
+154,jining,Internet Explorer 8,2225
+155,taian,Internet Explorer 8,1606
+156,weihai,Internet Explorer 8,1372
+157,rizhao,Internet Explorer 8,1076
+158,laiwu,Internet Explorer 8,503
+159,linyi,Internet Explorer 8,2708
+160,dezhou,Internet Explorer 8,1405
+161,liaocheng,Internet Explorer 8,1383
+162,binzhou,Internet Explorer 8,1260
+163,heze,Internet Explorer 8,1469
+164,,Internet Explorer 8,866
+165,zhengzhou,Internet Explorer 8,6099
+166,kaifeng,Chrome 21,808
+167,luoyang,Chrome 21,2177
+168,pingdingshan,Internet Explorer 8,1304
+169,anyang,Internet Explorer 8,1274
+170,hebi,Internet Explorer 8,543
+171,xinxiang,Internet Explorer 8,1788
+172,jiaozuo,Internet Explorer 8,1510
+173,puyang,Internet Explorer 8,673
+174,xuchang,Internet Explorer 8,1222
+175,luohe,Internet Explorer 8,754
+176,sanmenxia,Internet Explorer 8,871
+177,nanyang,Internet Explorer 8,1619
+178,shangqiu,Internet Explorer 8,1199
+179,xinyang,Internet Explorer 8,1057
+180,zhoukou,Internet Explorer 8,1060
+181,zhumadian,Internet Explorer 8,731
+183,,Chrome 21,608
+184,wuhan,Chrome 21,8541
+185,huangshi,Internet Explorer 8,773
+186,shiyan,Internet Explorer 8,987
+187,yichang,Internet Explorer 8,1314
+188,xiangfan,Internet Explorer 8,1379
+189,ezhou,Chrome 21,587
+190,jingmen,Internet Explorer 8,958
+191,xiaogan,Internet Explorer 8,1115
+192,jingzhou,Internet Explorer 8,1054
+193,huanggang,Internet Explorer 8,1132
+194,xianning,Mobile Safari,1066
+195,suizhou,Internet Explorer 8,525
+196,enshishi,Internet Explorer 8,540
+201,,Mobile Safari,1008
+202,changsha,Mobile Safari,12705
+203,zhuzhou,Chrome 21,1254
+204,xiangtan,Chrome 21,914
+205,hengyang,Internet Explorer 8,1099
+206,shaoyang,Internet Explorer 8,911
+207,yueyang,Internet Explorer 8,1004
+208,changde,Internet Explorer 8,846
+209,zhangjiajie,Internet Explorer 8,265
+210,yiyang,Internet Explorer 8,729
+211,chenzhou,Internet Explorer 8,1042
+212,yongzhou,Internet Explorer 8,739
+213,huaihua,Internet Explorer 8,719
+214,loudi,Internet Explorer 8,699
+215,xiangxi,Internet Explorer 8,599
+216,,Chrome 21,10349
+217,guangzhou,Chrome 21,53144
+218,shaoguan,Chrome 21,3178
+219,shenzhen,Internet Explorer 8,60079
+220,zhuhai,Mobile Safari,20228
+221,shantou,Chrome 21,8062
+222,foshan,Chrome 21,19856
+223,jiangmen,Chrome 21,8346
+224,zhanjiang,Chrome 21,5416
+225,maoming,Chrome 21,3462
+226,zhaoqing,Chrome 21,4194
+227,huizhou,Chrome 21,10461
+228,meizhou,Internet Explorer 8,3578
+229,shanwei,Chrome 21,2057
+230,heyuan,Chrome 21,2551
+231,yangjiang,Chrome 21,3159
+232,qingyuan,Chrome 21,4134
+233,dongguan,Chrome 21,27229
+234,zhongshan,Chrome 21,10111
+235,chaozhou,Chrome 21,2536
+236,jieyang,Chrome 21,4771
+237,yunfu,Chrome 21,1500
+238,,Internet Explorer 8,781
+239,nanning,Internet Explorer 8,4807
+240,liuzhou,Internet Explorer 8,1910
+241,guilin,Internet Explorer 8,1624
+242,wuzhou,Internet Explorer 8,1302
+243,beihai,Internet Explorer 8,539
+244,fangchenggang,Internet Explorer 8,414
+245,qinzhou,Internet Explorer 8,671
+246,guigang,Internet Explorer 8,735
+247,yulin_238,Internet Explorer 8,1442
+248,baise,Internet Explorer 8,671
+249,hezhou,Internet Explorer 8,334
+250,hechi,Internet Explorer 8,596
+251,laibin,Internet Explorer 8,429
+252,chongzuo,Internet Explorer 8,107
+253,,Chrome 21,162
+254,haikou,Chrome 21,3378
+255,sanya,Chrome 21,143
+275,,Chrome 21,9167
+276,,Chrome 21,1628
+277,chengdu,Chrome 21,9085
+278,zigong,Chrome 21,539
+279,panzhihua,Chrome 21,465
+280,luzhou,Internet Explorer 8,684
+281,deyang,Chrome 21,971
+282,mianyang,Chrome 21,1390
+283,guangyuan,Internet Explorer 8,437
+284,suining,Internet Explorer 8,525
+285,neijiang,Internet Explorer 8,517
+286,leshan,Chrome 21,1099
+287,nanchong,Internet Explorer 8,913
+288,meishan,Chrome 21,506
+289,yibin,Internet Explorer 8,792
+290,guangan,Internet Explorer 8,388
+291,dazhou,Mobile Safari,778
+292,yaan,Internet Explorer 8,312
+293,bazhong,Internet Explorer 8,295
+294,ziyang,Internet Explorer 8,514
+295,aba,Internet Explorer 8,145
+296,ganzi,Chrome 21,126
+297,liangshan,Chrome 21,498
+299,guiyang,Chrome 21,2496
+300,liupanshui,Internet Explorer 8,302
+301,zunyi,Mobile Safari,854
+302,anshun,Mobile Safari,286
+303,tongren,Internet Explorer 8,464
+304,qianxinan,Internet Explorer 8,355
+305,bijie,Internet Explorer 8,382
+306,qiandongnan,Internet Explorer 8,460
+307,qiannan,Chrome 21,418
+308,,Chrome 21,541
+309,kunming,Chrome 21,3772
+310,qujing,Internet Explorer 8,485
+311,yuxi,Internet Explorer 8,452
+312,baoshan,Chrome 21,220
+313,zhaotong,Internet Explorer 8,285
+314,lijiang,Chrome 21,171
+315,puer,Internet Explorer 8,233
+316,lincang,Chrome 21,193
+317,chuxiong,Internet Explorer 8,245
+318,honghe,Chrome 21,679
+319,wenshan,Internet Explorer 8,288
+320,xishuangbanna,Internet Explorer 8,308
+321,dali,Chrome 21,392
+322,dehong,Mobile Safari,197
+323,nujiang,Internet Explorer 8,51
+324,diqing,Chrome 21,42
+325,,Internet Explorer 8,18
+326,lasa,Internet Explorer 7,133
+327,changdu,Internet Explorer 7,23
+328,shannan,Internet Explorer 7,11
+329,rikaze,Internet Explorer 8,10
+330,naqu,Internet Explorer 7,16
+331,ali,Internet Explorer 7,16
+332,linzhi,Internet Explorer 7,19
+333,,Chrome 21,768
+334,xian,Chrome 21,7770
+335,tongzhou,Internet Explorer 8,215
+336,baoji,Internet Explorer 8,1079
+337,xianyang,Internet Explorer 8,1089
+338,weinan,Internet Explorer 8,1117
+339,yanan,Internet Explorer 8,422
+340,hanzhong,Internet Explorer 8,912
+341,yulin_333,Internet Explorer 8,836
+342,ankang,Internet Explorer 8,491
+343,shangluo,Internet Explorer 8,428
+344,,Internet Explorer 8,263
+345,lanzhou,Chrome 21,2020
+346,jiayuguan,Chrome 21,174
+347,jinchang,Internet Explorer 8,172
+348,baiyin,Internet Explorer 8,317
+349,tianshui,Internet Explorer 8,269
+350,wuwei,Internet Explorer 8,232
+351,zhangye,Internet Explorer 8,211
+352,pingliang,Internet Explorer 8,278
+353,jiuquan,Chrome 21,296
+354,qingyang,Internet Explorer 8,276
+355,dingxi,Chrome 21,160
+356,longnan,Internet Explorer 8,188
+357,linxia,Internet Explorer 8,123
+358,gannan,Internet Explorer 8,57
+359,,Chrome 21,37
+360,xining,Chrome 21,751
+361,haidong,Chrome 21,75
+362,haibei,Chrome 21,25
+363,huangnan,Chrome 21,10
+364,hainanzangzu,Chrome 21,41
+365,guoluo,Chrome 21,14
+366,yushu,Internet Explorer 7,16
+367,haixi,Chrome 21,137
+368,,Internet Explorer 8,187
+369,yinchuan,Internet Explorer 8,1021
+370,shizuishan,Chrome 21,250
+371,wuzhong,Internet Explorer 8,199
+372,guyuan,Internet Explorer 8,143
+373,zhongwei,Internet Explorer 8,134
+374,,Chrome 21,14
+375,wulumuqi,Internet Explorer 8,2111
+376,kelamayi,Internet Explorer 8,297
+377,tulufan,Internet Explorer 8,119
+378,hami,Internet Explorer 8,225
+379,changji,Internet Explorer 8,463
+380,boertala,Internet Explorer 8,158
+381,bayinguoleng,Internet Explorer 8,494
+382,akesu,Internet Explorer 8,388
+383,kezilesukeerkezi,Internet Explorer 8,83
+384,kashi,Internet Explorer 8,355
+385,hetian,Internet Explorer 7,87
+386,yili,Internet Explorer 8,742
+387,tacheng,Internet Explorer 8,236
+388,aletai,Internet Explorer 8,115
+393,,Chrome 30,8347
+394,,Chrome 30,2379
+395,,Chrome 30,210
+396,,Internet Explorer 8,17
+397,,Internet Explorer 8,1009
+398,,Internet Explorer 7,95
+399,,Internet Explorer 8,830

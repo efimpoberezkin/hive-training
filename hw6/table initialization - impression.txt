@@ -1,0 +1,30 @@
+CREATE EXTERNAL TABLE impression (
+  bid_id string,
+  timestmp string,
+  log_type string,
+  ipinyou_id string,
+  user_agent string,
+  ip string,
+  region_id int,
+  city_id int,
+  ad_exchange int,
+  domain string,
+  url string,
+  anonymous_url string,
+  ad_slot_id string,
+  ad_slot_width int,
+  ad_slot_height int,
+  ad_slot_visibility string,
+  ad_slot_format string,
+  ad_slot_floor_price int,
+  creative_id string,
+  bidding_price int,
+  paying_price int,
+  landing_page_url string,
+  advertiser_id int,
+  user_profile_ids string
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE
+LOCATION '/user/maria_dev/hw6/impression';

@@ -1,0 +1,11 @@
+Count total number of flights per carrier in 2007
+
+SELECT unique_carrier AS id, description AS carrier, number_of_flights
+FROM
+(
+  SELECT unique_carrier, COUNT(*) AS number_of_flights
+  FROM flights
+  GROUP BY unique_carrier
+) f
+JOIN carriers c ON f.unique_carrier = c.code
+ORDER BY id;

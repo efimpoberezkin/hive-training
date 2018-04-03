@@ -1,0 +1,17 @@
+Find five most busy airports in US during Jun 01 - Aug 31
+
+SELECT airport, number_of_flights
+FROM
+(
+  SELECT iata, COUNT(*) AS number_of_flights
+  FROM
+  (
+    SELECT origin AS iata FROM flights WHERE month IN (6,7,8)
+    UNION ALL
+    SELECT dest AS iata FROM flights WHERE month IN (6,7,8)
+  ) t1
+  GROUP BY iata
+) f
+JOIN airports a ON f.iata = a.iata
+WHERE a.country = 'USA'
+ORDER BY number_of_flights DESC LIMIT 5;

@@ -1,0 +1,1 @@
+Bucketing flights by month into 4 buckets didn't have any significant effect on efficiency, increasing amount of buckets to 12 and to 256 slowed down the query.

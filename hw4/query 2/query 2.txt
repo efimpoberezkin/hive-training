@@ -1,0 +1,6 @@
+The total number of flights served in Jun 2007 by NYC
+
+SELECT COUNT(*) AS new_york_total_flights
+FROM flights f JOIN airports a
+WHERE (f.origin = a.iata OR f.dest = a.iata)
+AND f.month = 6 AND a.city = 'New York';

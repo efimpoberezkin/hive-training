@@ -1,0 +1,70 @@
+============================
+Logs for Query 'use default'
+============================
+
+
+=======================================================================================================================================================================================================================================================================================================================================================================================
+Logs for Query 'SELECT airport, number_of_flights
+FROM
+(
+  SELECT iata, COUNT(*) AS number_of_flights
+  FROM
+  (
+    SELECT origin AS iata FROM flights WHERE month IN (6,7,8)
+    UNION ALL
+    SELECT dest AS iata FROM flights WHERE month IN (6,7,8)
+  ) t1
+  GROUP BY iata
+) f
+JOIN airports a ON f.iata = a.iata
+WHERE a.country = 'USA'
+ORDER BY number_of_flights DESC LIMIT 5'
+=======================================================================================================================================================================================================================================================================================================================================================================================
+
+INFO  : Number of reduce tasks not specified. Estimated from input data size: 11
+INFO  : In order to change the average load for a reducer (in bytes):
+INFO  :   set hive.exec.reducers.bytes.per.reducer=<number>
+INFO  : In order to limit the maximum number of reducers:
+INFO  :   set hive.exec.reducers.max=<number>
+INFO  : In order to set a constant number of reducers:
+INFO  :   set mapreduce.job.reduces=<number>
+INFO  : number of splits:3
+INFO  : Submitting tokens for job: job_1517995013177_0067
+INFO  : The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0067/
+INFO  : Starting Job = job_1517995013177_0067, Tracking URL = http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0067/
+INFO  : Kill Command = /usr/hdp/2.6.3.0-235/hadoop/bin/hadoop job  -kill job_1517995013177_0067
+INFO  : Hadoop job information for Stage-1: number of mappers: 3; number of reducers: 11
+INFO  : 2018-02-08 08:23:48,092 Stage-1 map = 0%,  reduce = 0%
+INFO  : 2018-02-08 08:23:56,743 Stage-1 map = 33%,  reduce = 0%, Cumulative CPU 4.63 sec
+INFO  : 2018-02-08 08:23:57,773 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 10.36 sec
+INFO  : 2018-02-08 08:23:58,796 Stage-1 map = 78%,  reduce = 0%, Cumulative CPU 17.19 sec
+INFO  : 2018-02-08 08:23:59,832 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 17.74 sec
+INFO  : 2018-02-08 08:24:06,186 Stage-1 map = 100%,  reduce = 18%, Cumulative CPU 21.66 sec
+INFO  : 2018-02-08 08:24:10,657 Stage-1 map = 100%,  reduce = 27%, Cumulative CPU 23.67 sec
+INFO  : 2018-02-08 08:24:12,840 Stage-1 map = 100%,  reduce = 36%, Cumulative CPU 25.79 sec
+INFO  : 2018-02-08 08:24:16,098 Stage-1 map = 100%,  reduce = 45%, Cumulative CPU 27.74 sec
+INFO  : 2018-02-08 08:24:17,151 Stage-1 map = 100%,  reduce = 55%, Cumulative CPU 29.91 sec
+INFO  : 2018-02-08 08:24:19,306 Stage-1 map = 100%,  reduce = 73%, Cumulative CPU 34.55 sec
+INFO  : 2018-02-08 08:24:20,327 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 41.44 sec
+INFO  : MapReduce Total cumulative CPU time: 41 seconds 440 msec
+INFO  : Ended Job = job_1517995013177_0067
+INFO  : Execution completed successfully
+INFO  : MapredLocal task succeeded
+INFO  : Number of reduce tasks determined at compile time: 1
+INFO  : In order to change the average load for a reducer (in bytes):
+INFO  :   set hive.exec.reducers.bytes.per.reducer=<number>
+INFO  : In order to limit the maximum number of reducers:
+INFO  :   set hive.exec.reducers.max=<number>
+INFO  : In order to set a constant number of reducers:
+INFO  :   set mapreduce.job.reduces=<number>
+INFO  : number of splits:1
+INFO  : Submitting tokens for job: job_1517995013177_0068
+INFO  : The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0068/
+INFO  : Starting Job = job_1517995013177_0068, Tracking URL = http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0068/
+INFO  : Kill Command = /usr/hdp/2.6.3.0-235/hadoop/bin/hadoop job  -kill job_1517995013177_0068
+INFO  : Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+INFO  : 2018-02-08 08:24:30,893 Stage-3 map = 0%,  reduce = 0%
+INFO  : 2018-02-08 08:24:36,092 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.91 sec
+INFO  : 2018-02-08 08:24:40,231 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 3.54 sec
+INFO  : MapReduce Total cumulative CPU time: 3 seconds 540 msec
+INFO  : Ended Job = job_1517995013177_0068

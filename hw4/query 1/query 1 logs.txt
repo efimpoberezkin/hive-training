@@ -1,0 +1,64 @@
+============================
+Logs for Query 'use default'
+============================
+
+
+===========================================================================================================================================================================================================================================================
+Logs for Query 'SELECT unique_carrier AS id, description AS carrier, number_of_flights
+FROM
+(
+  SELECT unique_carrier, COUNT(*) AS number_of_flights
+  FROM flights
+  GROUP BY unique_carrier
+) f
+JOIN carriers c ON f.unique_carrier = c.code
+ORDER BY id'
+===========================================================================================================================================================================================================================================================
+
+INFO  : Number of reduce tasks not specified. Estimated from input data size: 11
+INFO  : In order to change the average load for a reducer (in bytes):
+INFO  :   set hive.exec.reducers.bytes.per.reducer=<number>
+INFO  : In order to limit the maximum number of reducers:
+INFO  :   set hive.exec.reducers.max=<number>
+INFO  : In order to set a constant number of reducers:
+INFO  :   set mapreduce.job.reduces=<number>
+INFO  : number of splits:3
+INFO  : Submitting tokens for job: job_1517995013177_0055
+INFO  : The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0055/
+INFO  : Starting Job = job_1517995013177_0055, Tracking URL = http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0055/
+INFO  : Kill Command = /usr/hdp/2.6.3.0-235/hadoop/bin/hadoop job  -kill job_1517995013177_0055
+INFO  : Hadoop job information for Stage-1: number of mappers: 3; number of reducers: 11
+INFO  : 2018-02-07 12:41:46,884 Stage-1 map = 0%,  reduce = 0%
+INFO  : 2018-02-07 12:41:55,174 Stage-1 map = 67%,  reduce = 0%, Cumulative CPU 8.07 sec
+INFO  : 2018-02-07 12:41:56,217 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 12.88 sec
+INFO  : 2018-02-07 12:42:01,484 Stage-1 map = 100%,  reduce = 9%, Cumulative CPU 14.69 sec
+INFO  : 2018-02-07 12:42:03,610 Stage-1 map = 100%,  reduce = 18%, Cumulative CPU 16.49 sec
+INFO  : 2018-02-07 12:42:09,248 Stage-1 map = 100%,  reduce = 27%, Cumulative CPU 18.53 sec
+INFO  : 2018-02-07 12:42:11,580 Stage-1 map = 100%,  reduce = 36%, Cumulative CPU 20.56 sec
+INFO  : 2018-02-07 12:42:13,757 Stage-1 map = 100%,  reduce = 45%, Cumulative CPU 22.65 sec
+INFO  : 2018-02-07 12:42:14,857 Stage-1 map = 100%,  reduce = 55%, Cumulative CPU 24.73 sec
+INFO  : 2018-02-07 12:42:16,011 Stage-1 map = 100%,  reduce = 64%, Cumulative CPU 26.89 sec
+INFO  : 2018-02-07 12:42:17,135 Stage-1 map = 100%,  reduce = 82%, Cumulative CPU 30.96 sec
+INFO  : 2018-02-07 12:42:18,191 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 36.44 sec
+INFO  : MapReduce Total cumulative CPU time: 36 seconds 440 msec
+INFO  : Ended Job = job_1517995013177_0055
+INFO  : Execution completed successfully
+INFO  : MapredLocal task succeeded
+INFO  : Number of reduce tasks determined at compile time: 1
+INFO  : In order to change the average load for a reducer (in bytes):
+INFO  :   set hive.exec.reducers.bytes.per.reducer=<number>
+INFO  : In order to limit the maximum number of reducers:
+INFO  :   set hive.exec.reducers.max=<number>
+INFO  : In order to set a constant number of reducers:
+INFO  :   set mapreduce.job.reduces=<number>
+INFO  : number of splits:1
+INFO  : Submitting tokens for job: job_1517995013177_0056
+INFO  : The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0056/
+INFO  : Starting Job = job_1517995013177_0056, Tracking URL = http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0056/
+INFO  : Kill Command = /usr/hdp/2.6.3.0-235/hadoop/bin/hadoop job  -kill job_1517995013177_0056
+INFO  : Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+INFO  : 2018-02-07 12:42:30,514 Stage-3 map = 0%,  reduce = 0%
+INFO  : 2018-02-07 12:42:34,688 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.83 sec
+INFO  : 2018-02-07 12:42:39,868 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 3.81 sec
+INFO  : MapReduce Total cumulative CPU time: 3 seconds 810 msec
+INFO  : Ended Job = job_1517995013177_0056

@@ -1,0 +1,11 @@
+Find the carrier who served the biggest number of flights
+
+SELECT unique_carrier AS id, description AS carrier, number_of_flights
+FROM
+(
+  SELECT unique_carrier, COUNT(*) AS number_of_flights
+  FROM flights
+  GROUP BY unique_carrier
+) f
+JOIN carriers c ON f.unique_carrier = c.code
+ORDER BY number_of_flights DESC LIMIT 1;

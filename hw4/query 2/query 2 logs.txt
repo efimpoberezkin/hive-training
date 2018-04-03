@@ -1,0 +1,34 @@
+============================
+Logs for Query 'use default'
+============================
+
+
+==============================================================================================================================================================================
+Logs for Query 'SELECT COUNT(*) AS new_york_total_flights
+FROM flights f JOIN airports a
+WHERE (f.origin = a.iata OR f.dest = a.iata)
+AND f.month = 6 AND a.city = 'New York''
+==============================================================================================================================================================================
+
+INFO  : Warning: Map Join MAPJOIN[2512][bigTable=?] in task 'Stage-2:MAPRED' is a cross product
+INFO  : Execution completed successfully
+INFO  : MapredLocal task succeeded
+INFO  : Number of reduce tasks determined at compile time: 1
+INFO  : In order to change the average load for a reducer (in bytes):
+INFO  :   set hive.exec.reducers.bytes.per.reducer=<number>
+INFO  : In order to limit the maximum number of reducers:
+INFO  :   set hive.exec.reducers.max=<number>
+INFO  : In order to set a constant number of reducers:
+INFO  :   set mapreduce.job.reduces=<number>
+INFO  : number of splits:3
+INFO  : Submitting tokens for job: job_1517995013177_0057
+INFO  : The url to track the job: http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0057/
+INFO  : Starting Job = job_1517995013177_0057, Tracking URL = http://sandbox-hdp.hortonworks.com:8088/proxy/application_1517995013177_0057/
+INFO  : Kill Command = /usr/hdp/2.6.3.0-235/hadoop/bin/hadoop job  -kill job_1517995013177_0057
+INFO  : Hadoop job information for Stage-2: number of mappers: 3; number of reducers: 1
+INFO  : 2018-02-07 12:53:20,641 Stage-2 map = 0%,  reduce = 0%
+INFO  : 2018-02-07 12:53:29,143 Stage-2 map = 67%,  reduce = 0%, Cumulative CPU 8.86 sec
+INFO  : 2018-02-07 12:53:31,203 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 14.8 sec
+INFO  : 2018-02-07 12:53:34,333 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 17.1 sec
+INFO  : MapReduce Total cumulative CPU time: 17 seconds 100 msec
+INFO  : Ended Job = job_1517995013177_0057

@@ -1,0 +1,16 @@
+CREATE EXTERNAL TABLE airports (
+  iata string, 
+  airport string, 
+  city string, 
+  state string, 
+  country string, 
+  latitude float, 
+  longitute float
+)
+ROW FORMAT SERDE 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+WITH SERDEPROPERTIES (
+   "separatorChar" = ",",
+   "quoteChar"     = "\""
+)  
+LOCATION '/user/maria_dev/hw4/airports'
+TBLPROPERTIES ("skip.header.line.count"="1");

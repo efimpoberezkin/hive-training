@@ -1,0 +1,110 @@
+-- Creating udf --
+
+CREATE FUNCTION parseUA AS 'com.epam.training.bigdata.hive.udf.ParseUA'
+USING JAR 'hdfs:///user/maria_dev/hw6/parse_ua.jar';
+
+
+
+-- Writing parsed ua fields and corresponding city_id into new table --
+
+CREATE TABLE city_ua AS
+SELECT city_id, ua.device, ua.os, ua.browser, ua.browser_group, ua.type
+FROM (
+  SELECT city_id AS city_id, parseUA(user_agent) AS ua
+  FROM impression
+) parsed;
+
+
+
+-- Finding most popular device by city (query 1) --
+
+SELECT city_id, name AS city_name, device AS most_popular_device, cnt AS count
+FROM
+(
+  SELECT t1.city_id, t1.device, t1.cnt, rank() OVER (PARTITION BY t1.city_id ORDER BY t1.cnt DESC) AS rnk
+  FROM
+  (
+    SELECT city_id, device, COUNT(*) AS cnt
+    FROM city_ua
+    GROUP BY city_id, device
+  ) t1
+) t2
+LEFT JOIN city ON t2.city_id = city.id
+WHERE rnk = 1
+ORDER BY city_id;
+
+
+
+-- Finding most popular browser by city (query 2) --
+
+SELECT city_id, name AS city_name, browser AS most_popular_browser, cnt AS count
+FROM
+(
+  SELECT t1.city_id, t1.browser, t1.cnt, rank() OVER (PARTITION BY t1.city_id ORDER BY t1.cnt DESC) AS rnk
+  FROM
+  (
+    SELECT city_id, browser, COUNT(*) AS cnt
+    FROM city_ua
+    GROUP BY city_id, browser
+  ) t1
+) t2
+LEFT JOIN city ON t2.city_id = city.id
+WHERE rnk = 1
+ORDER BY city_id;
+
+
+
+-- Finding most popular os by city (query 3) --
+
+SELECT city_id, name AS city_name, os AS most_popular_os, cnt AS count
+FROM
+(
+  SELECT t1.city_id, t1.os, t1.cnt, rank() OVER (PARTITION BY t1.city_id ORDER BY t1.cnt DESC) AS rnk
+  FROM
+  (
+    SELECT city_id, os, COUNT(*) AS cnt
+    FROM city_ua
+    GROUP BY city_id, os
+  ) t1
+) t2
+LEFT JOIN city ON t2.city_id = city.id
+WHERE rnk = 1
+ORDER BY city_id;
+
+
+
+-- Finding most popular user agent type by city (query 4) --
+
+SELECT city_id, name AS city_name, type AS most_popular_ua_type, cnt AS count
+FROM
+(
+  SELECT t1.city_id, t1.type, t1.cnt, rank() OVER (PARTITION BY t1.city_id ORDER BY t1.cnt DESC) AS rnk
+  FROM
+  (
+    SELECT city_id, type, COUNT(*) AS cnt
+    FROM city_ua
+    GROUP BY city_id, type
+  ) t1
+) t2
+LEFT JOIN city ON t2.city_id = city.id
+WHERE rnk = 1
+ORDER BY city_id;
+
+
+
+-- Finding most popular browser group by city (query 5) --
+
+SELECT city_id, name AS city_name, browser_group AS most_popular_browser_group, cnt AS count
+FROM
+(
+  SELECT t1.city_id, t1.browser_group, t1.cnt, rank() OVER (PARTITION BY t1.city_id ORDER BY t1.cnt DESC) AS rnk
+  FROM
+  (
+    SELECT city_id, browser_group, COUNT(*) AS cnt
+    FROM city_ua
+    GROUP BY city_id, browser_group
+  ) t1
+) t2
+LEFT JOIN city ON t2.city_id = city.id
+WHERE rnk = 1
+ORDER BY city_id;
